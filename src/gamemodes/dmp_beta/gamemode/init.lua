@@ -15,34 +15,39 @@
 --    You should have received a copy of the GNU General Public License
 --    along with DeathmatchPlus.  If not, see <http://www.gnu.org/licenses/>.
 
--- I love Stackoverflow
+
+
+
+-- Welcome to init.lua! Sorry for my inconsistant comments(some have spaces first, others don't).
+-- I hope you don't get too much pain from reading this code. I hope you got this from github.
+-- You shouldn't go around and decompiling other peoples code!
+-- Also, you might find a lot of out commented lines of code. When something didn't work, I just commented it out.
+-- Yes, I'm lazy. I know.
+-- Anyways, enjoy my crappy code!
+
+-- I love Stackoverflow.
 
 AddCSLuaFile( "cl_init.lua" )
 AddCSLuaFile( "shared.lua" )
---AddCSLuaFile( "defaultdm.lua" )
+
 
 include( "shared.lua" )
---include( "defaultdm.lua" )
+include( "weaponpick.lua" )
+
 
 function GM:Initialize()
---  SourceTV hates me... I hate it too.
---	RunConsoleCommand( "tv_enable", 1 )
---	RunConsoleCommand( "tv_autorecord", 1 )
+	--Put something here if it's needed.
 end
 
 function GM:PlayerInitialSpawn( ply )
 
---This is for testing reasons only!! NO STEP ON SNEK!!
-	local ent = ents.Create( "prop_physics" )
-	ent:SetModel( "models/hunter/misc/sphere025x025.mdl" )
-	ent:SetPos( Vector( 0, 0, 0 ) )
-	ent:Spawn()
---This is for testing reasons only!! NO STEP ON SNEK!!
+--This is for testing reasons only!!
+	--local ent = ents.Create( "prop_physics" )
+	--ent:SetModel( "models/hunter/misc/sphere025x025.mdl" )
+	--ent:SetPos( Vector( 0, 0, 0 ) )
+	--ent:Spawn()
+--This is for testing reasons only!!
 
-	--ply:SetTeam( 1 )
-	--6 is for dev reasons, set to 5 for final release.
-	--ply:Spectate( OBS_MODE_CHASE )
-	--ply:SpectateEntity( ent )
 
 end
 
@@ -50,179 +55,8 @@ function GM:PlayerSpawn( ply )
   self.BaseClass:PlayerSpawn( ply )
 
 
-	-- Randomness
-	local r1 = math.random(1,20)
-	local r2 = math.random(1,6)
-	local r3 = math.random(1,5)
-
-	if ply:Team() == 1 then
-	-- Determine Primary
-	if r1 == 1 then
-
-		ply:Give( "fas2_ak12" )
-
-	elseif r1 == 2 then
-
-		ply:Give( "fas2_ak47" )
-		ply:GiveAmmo( 90, "7.62x39MM", true )
-
-	elseif r1 == 3 then
-
-		ply:Give( "fas2_ak74" )
-
-	elseif r1 == 4 then
-
-		ply:Give( "fas2_m4a1" )
-
-	elseif r1 == 5 then
-
-		ply:Give( "fas2_mp5k" )
-
-	elseif r1 == 6 then
-
-		ply:Give( "fas2_mp5sd6" )
-
-	elseif r1 == 7 then
-
-		ply:Give( "fas2_uzi" )
-
-	elseif r1 == 8 then
-		--Explosives have been disabled due to buggyness and ammo problems.
-		--ply:Give( "fas2_m79" )
-		ply:Give( "fas2_m4a1" )
-	elseif r1 == 9 then
-
-		ply:Give( "fas2_ks23" )
-
-	elseif r1 == 10 then
-
-		ply:Give( "fas2_rem870" )
-
-	elseif r1 == 11 then
-
-		ply:Give( "fas2_famas" )
-
-	elseif r1 == 12 then
-
-		ply:Give( "fas2_g36c" )
-
-	elseif r1 == 13 then
-
-		ply:Give( "fas2_m14" )
-
-	elseif r1 == 14 then
-
-		ply:Give( "fas2_m21" )
-
-	elseif r1 == 15 then
-
-		ply:Give( "fas2_m82" )
-
-	elseif r1 == 16 then
-
-		ply:Give( "fas2_sg550" )
-
-	elseif r1 == 17 then
-
-		ply:Give( "fas2_sr25" )
-
-	elseif r1 == 18 then
-
-		ply:Give( "fas2_an94" )
-
-	elseif r1 == 19 then
-
-		ply:Give( "fas2_galil" )
-
-	elseif r1 == 20 then
-
-		ply:Give( "fas2_toz34" )
-
-	end
-
-	-- Determine Secondary
-	if r2 == 1 then
-
-		ply:Give( "fas2_deagle" )
-
-	elseif r2 == 2 then
-
-		ply:Give( "fas2_m1911" )
-
-	elseif r2 == 3 then
-
-		ply:Give( "fas2_p226" )
-
-	elseif r2 == 4 then
-		--Explosives have been disabled due to buggyness and ammo problems.
-		--ply:Give( "fas2_m67" )
-		ply:Give( "fas2_p226" )
-
-	elseif r2 == 5 then
-
-		ply:Give( "fas2_ots33" )
-
-	elseif r2 == 6 then
-
-		local medkits = GetConVar( "dmp_allow_medkits" )
-		if medkits:GetInt() == 1 then
-			ply:Give( "fas2_ifak" )
-		else
-			ply:Give( "fas2_p226" )
-		end
-
-	end
-
-	-- Determine Playermodel
-	-- All these models already exist in Garry's Mod. That saves us from messing around with stupid file crap.
-	-- I could add more models, but I don't feel like it.
-	if r3 == 1 then
-
-		ply:SetModel( "models/player/arctic.mdl" )
-
-	elseif r3 == 2 then
-
-		ply:SetModel( "models/player/combine_soldier.mdl" )
-
-	elseif r3 == 3 then
-
-		ply:SetModel( "models/player/police.mdl" )
-
-	elseif r3 == 4 then
-
-		ply:SetModel( "models/player/combine_super_soldier.mdl" )
-
-	elseif r3 == 5 then
-
-		ply:SetModel( "models/player/gasmask.mdl" )
-
-	end
-
-
-	--Determine melee weapon
-	--Fun fact: The melee weapon you get is based on your character model. Don't tell anyone though.
-	if r3 == 1 then
-
-		ply:Give( "fas2_dv2" )
-
-	elseif r3 == 2 then
-
-		ply:Give( "fas2_machete" )
-
-	elseif r3 == 3 then
-
-		ply:Give( "fas2_dv2" )
-
-	elseif r3 == 4 then
-
-		ply:Give( "fas2_machete" )
-
-	elseif r3 == 5 then
-
-		ply:Give( "fas2_dv2" )
-
-	end
-
+	--Weapons
+	hook.Add(pickWeapons)
 
 	--Do some stupid setup things here.
 	ply:SetupHands()
@@ -235,6 +69,8 @@ function GM:PlayerSpawn( ply )
 	--This is temporary, no forgitty!!!!
 	--ply:Give( "fas2_ifak" )
 	--This is temporary, no forgitty!!!!
+
+	--Give the player all the ammo.
 	ply:GiveAmmo( ammoAmmount, "9x18MM", true )
 	ply:GiveAmmo( ammoAmmount, "9x19MM", true )
 	ply:GiveAmmo( ammoAmmount, "10x25MM", true )
@@ -269,7 +105,7 @@ function GM:PlayerSpawn( ply )
 	local runSpeed = GetConVar( "dmp_runspeed" )
 	--local flash = GetConVar( "dmp_allow_flashlight" )
 	-- Set player attributes
-	ply:SetGravity  ( 0.65 )  -- Comments are good.
+	ply:SetGravity  ( 0.50 )  -- Comments are good.
   ply:SetMaxHealth( 200 * hpMulti:GetInt(), true )
 	ply:SetHealth( 100 * hpMulti:GetInt())
 
@@ -297,6 +133,7 @@ end
 
 
 
+
 function KillCounter( victim, killer, weapon )  --Sets up a new function called KillCounter
 	local maxkills = GetConVar( "dmp_maxkills" )
 
@@ -307,7 +144,7 @@ function KillCounter( victim, killer, weapon )  --Sets up a new function called 
 	PrintMessage(HUD_PRINTTALK, killer:GetName() .. " killed " .. victim:GetName())
 	if killer:GetNWInt("killcounter") == maxkills:GetInt() then --If the killcounter variable equals 50 then do something
 		if system.IsLinux() == true then
-
+			--PrintMessage(HUD_PRINTTALK, killer:GetName() .. ": I would like to interject for a moment. What you're reffering to as Linux, is in fact, GNU/Linux, or as I’ve recently taken to calling it, GNU plus Linux. Linux is not an operating system unto itself, but rather another free component of a fully functioning GNU system made useful by the GNU corelibs, shell utilities and vital system components comprising a full OS as defined by POSIX.")
 		end
 		PrintMessage(HUD_PRINTTALK, "" .. killer:GetName() .. " Wins!")  --! is mandetory.
 		timer.Simple(7, function()   --Sets a timer for 10 seconds
@@ -319,7 +156,7 @@ end
 
 function GM:PlayerDeath( victim, inflictor, attacker )
 	if ( victim == attacker ) then
-			PrintMessage(HUD_PRINTTALK, killer:GetName() .. " killed themself!"())
+			PrintMessage(HUD_PRINTTALK, killer:GetName() .. " killed themself! Y U Do dat?"())
 	elseif ( victim != attacker ) then
 		hook.Add("PlayerDeath","KillCounter", KillCounter)
 	end

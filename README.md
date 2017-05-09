@@ -8,12 +8,13 @@ A Customizable Deathmatch Gamemode for Garry's Mod.
 
 ###### Steam Workshop Method:
 Step 1: Go to the Steam Workshop page.
-Step 2: Subscribe to the addon.
+Step 2: Subscribe to the addon and the dependencies.
 
 ###### From Source Method:
 Step 1: Copy the 'src' folder to `SteamApps/common/GarrysMod/garrysmod/addons" and rename it to dmp_beta`.
-Step 2: (Re)start Garry's Mod.
-Step 3: Select DeathmatchPlus gamemode.
+Step 2: Install FA:S 2 Weapons.
+Step 3: (Re)start Garry's Mod.
+Step 4: Select DeathmatchPlus gamemode.
 
 
 
