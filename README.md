@@ -7,7 +7,7 @@ A Customizable Deathmatch Gamemode for Garry's Mod.
 # How to install
 
 ###### Steam Workshop Method:
-Step 1: Go to the Steam Workshop page.
+Step 1: Go to the [Steam Workshop page](http://steamcommunity.com/sharedfiles/filedetails/?id=899508479).
 Step 2: Subscribe to the addon.
 
 ###### From Source Method:
