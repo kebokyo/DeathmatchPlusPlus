@@ -274,8 +274,8 @@ function GM:PlayerSpawn( ply )
 	ply:SetHealth( 100 * hpMulti:GetInt())
 
 	-- These don't work for some reason... I don't know why.
-	ply:SetWalkSpeed( 700 )
-	ply:SetRunSpeed ( 700 )
+	--ply:SetWalkSpeed( 700 )
+	--ply:SetRunSpeed ( 700 )
 
 	-- This does work however. That's a good.
 	ply:SetArmor( 10 * enMulti:GetInt())
