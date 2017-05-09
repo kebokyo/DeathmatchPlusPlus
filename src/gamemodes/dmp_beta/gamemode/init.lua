@@ -15,7 +15,7 @@
 --    You should have received a copy of the GNU General Public License
 --    along with DeathmatchPlus.  If not, see <http://www.gnu.org/licenses/>.
 
-
+-- I love Stackoverflow
 
 AddCSLuaFile( "cl_init.lua" )
 AddCSLuaFile( "shared.lua" )
@@ -291,31 +291,35 @@ function GM:PlayerSpawn( ply )
 
 	-- ply:Give( "weapon_ar2" )
 
-end
+--end
 
 end
+
+
 
 function KillCounter( victim, killer, weapon )  --Sets up a new function called KillCounter
 	local maxkills = GetConVar( "dmp_maxkills" )
+
 	--
 	--	This line is for testing only!!! Remove and fix death notifications instead!!!
 	--
-	PrintMessage(HUD_PRINTTALK, killer:GetName() .. " killed " .. victim:GetName())
-        if killer:GetNWInt("killcounter") == maxkills:GetInt() then --If the killcounter variable equals 50 then do something
-			if system.IsLinux() == true then
 
-			end
-			PrintMessage(HUD_PRINTTALK, "" .. killer:GetName() .. " Wins!")  --! is mandetory.
-			timer.Simple(7, function()   --Sets up a timer for seven seconds
-            game.ConsoleCommand("changelevel " ..game.GetMap().. "\n") --When the timer finishes it excecutes this console command
-            end)
-        end
+	PrintMessage(HUD_PRINTTALK, killer:GetName() .. " killed " .. victim:GetName())
+	if killer:GetNWInt("killcounter") == maxkills:GetInt() then --If the killcounter variable equals 50 then do something
+		if system.IsLinux() == true then
+
+		end
+		PrintMessage(HUD_PRINTTALK, "" .. killer:GetName() .. " Wins!")  --! is mandetory.
+		timer.Simple(7, function()   --Sets a timer for 10 seconds
+  		game.ConsoleCommand("changelevel " ..game.GetMap().. "\n") --Restart the map.
+  	end)
+  end
             killer:SetNWInt("killcounter", killer:GetNWInt("killcounter") + 1)  --Adds 1 everytime a player is killed.
-    end
+end
 
 function GM:PlayerDeath( victim, inflictor, attacker )
 	if ( victim == attacker ) then
-
+			PrintMessage(HUD_PRINTTALK, killer:GetName() .. " killed themself!"())
 	elseif ( victim != attacker ) then
 		hook.Add("PlayerDeath","KillCounter", KillCounter)
 	end
