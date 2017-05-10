@@ -1,4 +1,4 @@
-function pickWeapons
+function pickWeapons()
   -- Randomness
 	local r1 = math.random(1,20)
 	local r2 = math.random(1,6)

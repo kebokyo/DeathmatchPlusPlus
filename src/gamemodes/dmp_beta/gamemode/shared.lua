@@ -17,9 +17,9 @@
 
 include( "defaultdm.lua" )
 
-GM.Name = "Deathmatch Plus"
-GM.Author = "WeMakeCrap Studios"
-GM.Email = "dontkillus@notarealsite.com"
+GM.Name = "DeathmatchPlus"
+GM.Author = "John Lorentzson, Petter Öhlén"
+GM.Email = "bugs.teamdmp@gmail.com"
 GM.Website = "127.0.0.1:80"
 
 function GM:Initialize()

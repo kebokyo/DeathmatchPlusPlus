@@ -125,7 +125,7 @@ function GM:PlayerSpawn( ply )
 
 	--end
 
-	-- ply:Give( "weapon_ar2" )
+	-- ply:Give( "weapon_a2" )
 
 --end
 
