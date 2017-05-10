@@ -1,6 +1,4 @@
 # DeathmatchPlus
-A Customizable Deathmatch Gamemode for Garry's Mod.
-
 
 [Steam Workshop Link](http://steamcommunity.com/sharedfiles/filedetails/?id=899508479)
 

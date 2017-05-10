@@ -64,7 +64,7 @@
 		7
 		{
 			"name"		"dmp_walkspeed"
-			"text"		"Speed of walking"
+			"text"		"Speed of walking !!!NOT WORKING!!!"
 			"help"		"Changes walk speed."
 			"type"		"Numeric"
 			"default"	"325"
@@ -73,7 +73,7 @@
 		8
 		{
 			"name"		"dmp_runspeed"
-			"text"		"Speed of running"
+			"text"		"Speed of running !!!NOT WORKING!!!"
 			"help"		"Changes run speed."
 			"type"		"Numeric"
 			"default"	"600"
