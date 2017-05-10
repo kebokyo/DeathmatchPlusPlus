@@ -1,32 +1,25 @@
+AddCSLuaFile()
+
+AddCSLuaFile ("shared.lua")
+
+SWEP.Weight = 5
+
+SWEP.AutoSwitchTo = true
+SWEP.AutoSwitchFrom = false
 
 
-if SERVER then
- 
-	AddCSLuaFile ("shared.lua")
- 
-	SWEP.Weight = 5
- 
-	SWEP.AutoSwitchTo = true
-	SWEP.AutoSwitchFrom = false
 
-elseif CLIENT then
- 	
-	SWEP.PrintName = "Assault Rifle"
- 
-	SWEP.Slot = 3
-	SWEP.SlotPos = 1
- 
-	SWEP.DrawAmmo = true
- 
-	SWEP.DrawCrosshair = true
- 
-end
+SWEP.PrintName = "Assault Rifle"
+
+SWEP.Slot = 3
+SWEP.SlotPos = 1
+
+SWEP.DrawAmmo = true
+SWEP.DrawCrosshair = true
 
 
-SWEP.Author = ""
-SWEP.Contact = ""
-SWEP.Purpose = "It shoots."
-SWEP.Instructions = "Press fire. Reload button to reload."
+
+
 
 SWEP.Category = "DeathmatchPlus"
 
@@ -49,11 +42,17 @@ SWEP.Primary.Cone = 0.1
 SWEP.Primary.Delay = 0.5
 SWEP.ShellDelay	= 0.05
 
+SWEP.Secondary.ClipSize = -1
+SWEP.Secondary.DefaultClip = -1
+SWEP.Secondary.Ammo = "none"
+SWEP.Secondary.Automatic = false
 
-SWEP.Pistol	= false
-SWEP.Rifle	= true
-SWEP.Shotgun	= false
-SWEP.Sniper	= false
+SWEP.ShouldDropOnDie = true
+
+SWEP.Pistol	 = false
+SWEP.Rifle	 = true
+SWEP.Shotgun = false
+SWEP.Sniper	 = false
 
 
 SWEP.HoldType	= "ar2"
@@ -62,6 +61,6 @@ local ShootSound = ( "Weapon_SMG1.Single" )
 
 function SWEP:Reload()
 end
- 
+
 function SWEP:Think()
 end
