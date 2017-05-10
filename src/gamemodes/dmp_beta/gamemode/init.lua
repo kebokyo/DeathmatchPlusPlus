@@ -25,7 +25,7 @@
 -- Yes, I'm lazy. I know.
 -- Anyways, enjoy my crappy code!
 
--- I love Stackoverflow.
+
 
 AddCSLuaFile( "cl_init.lua" )
 AddCSLuaFile( "shared.lua" )
@@ -134,7 +134,7 @@ end
 
 
 
-function KillCounter( victim, killer, weapon )  --Sets up a new function called KillCounter
+function KillCounter( victim, killer, weapon )  -- Set up the KillCounter function.
 	local maxkills = GetConVar( "dmp_maxkills" )
 
 	--
@@ -156,7 +156,7 @@ end
 
 function GM:PlayerDeath( victim, inflictor, attacker )
 	if ( victim == attacker ) then
-			PrintMessage(HUD_PRINTTALK, killer:GetName() .. " killed themself! Y U Do dat?"())
+			PrintMessage(HUD_PRINTTALK, killer:GetName() .. " killed themself!"())
 	elseif ( victim != attacker ) then
 		hook.Add("PlayerDeath","KillCounter", KillCounter)
 	end
