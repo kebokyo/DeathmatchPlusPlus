@@ -32,7 +32,6 @@ AddCSLuaFile( "shared.lua" )
 
 
 include( "shared.lua" )
-include( "weaponpick.lua" )
 
 
 function GM:Initialize()
@@ -56,7 +55,7 @@ function GM:PlayerSpawn( ply )
 
 
 	--Weapons
-	hook.Add(pickWeapons)
+	include( "weaponpick.lua" )
 
 	--Do some stupid setup things here.
 	ply:SetupHands()
@@ -125,7 +124,6 @@ function GM:PlayerSpawn( ply )
 
 	--end
 
-	-- ply:Give( "weapon_a2" )
 
 --end
 
@@ -147,7 +145,7 @@ function KillCounter( victim, killer, weapon )  -- Set up the KillCounter functi
 			--PrintMessage(HUD_PRINTTALK, killer:GetName() .. ": I would like to interject for a moment. What you're reffering to as Linux, is in fact, GNU/Linux, or as I’ve recently taken to calling it, GNU plus Linux. Linux is not an operating system unto itself, but rather another free component of a fully functioning GNU system made useful by the GNU corelibs, shell utilities and vital system components comprising a full OS as defined by POSIX.")
 		end
 		PrintMessage(HUD_PRINTTALK, "" .. killer:GetName() .. " Wins!")  --! is mandetory.
-		timer.Simple(7, function()   --Sets a timer for 10 seconds
+		timer.Simple(10, function()   --Sets a timer for 10 seconds
   		game.ConsoleCommand("changelevel " ..game.GetMap().. "\n") --Restart the map.
   	end)
   end

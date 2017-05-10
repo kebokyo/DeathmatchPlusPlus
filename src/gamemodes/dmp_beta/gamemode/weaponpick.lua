@@ -1,17 +1,38 @@
-function pickWeapons()
+--    Copyright (c) John Lorentzson, Petter Öhlén
+--
+--    This file is part of DeathmatchPlus.
+
+--    DeathmatchPlus is free software: you can redistribute it and/or modify
+--    it under the terms of the GNU General Public License as published by
+--    the Free Software Foundation, either version 3 of the License, or
+--    (at your option) any later version.
+
+--    DeathmatchPlus is distributed in the hope that it will be useful,
+--    but WITHOUT ANY WARRANTY; without even the implied warranty of
+--    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+--    GNU General Public License for more details.
+
+--    You should have received a copy of the GNU General Public License
+--    along with DeathmatchPlus.  If not, see <http://www.gnu.org/licenses/>.
+
+
+
   -- Randomness
 	local r1 = math.random(1,20)
 	local r2 = math.random(1,6)
 	local r3 = math.random(1,5)
 
-
-
+	-- TESTING ONLY! REMOVE BEFORE MERGE!
+	r1 = 1
+	-- TESTING ONLY! REMOVE BEFORE MERGE!
+		
+	
 	-- I'm sorry for using 3rd party propriatary weapon addon. I'm working on custom weapons, but they're not ready.
 	-- It's going to feel more like Quake once they're in.
 	-- Determine Primary
 	if r1 == 1 then
-
-		ply:Give( "fas2_ak12" )
+		-- Testing the custom weapons.
+		ply:Give( "dmp_ar" )
 
 	elseif r1 == 2 then
 
@@ -172,4 +193,3 @@ function pickWeapons()
 		ply:Give( "fas2_dv2" )
 
 	end
-end
