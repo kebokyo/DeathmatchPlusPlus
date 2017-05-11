@@ -16,7 +16,7 @@ elseif CLIENT then
 
 	SWEP.DrawAmmo = true
 
-	SWEP.DrawCrosshair = true
+	SWEP.DrawCrosshair = false
 
 end
 
