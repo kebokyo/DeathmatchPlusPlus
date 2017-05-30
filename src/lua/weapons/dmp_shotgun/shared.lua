@@ -39,12 +39,12 @@ SWEP.Primary.DefaultClip = 35
 
 SWEP.Primary.Automatic = true
 
-SWEP.Primary.Ammo = "SMG1"
+SWEP.Primary.Ammo = "Buckshot"
 
 SWEP.Primary.Damage = 15
 SWEP.Primary.NumShots = 10
 SWEP.Primary.Cone = 0.1
-SWEP.Primary.Delay = 0.5
+SWEP.Primary.Delay = 1
 SWEP.ShellDelay	= 0.05
 SWEP.Primary.Spread = 0.5
 
