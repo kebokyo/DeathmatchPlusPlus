@@ -23,8 +23,6 @@ end
 
 SWEP.Author = ""
 SWEP.Contact = ""
-SWEP.Purpose = "It shoots."
-SWEP.Instructions = "Press fire. Reload button to reload."
 
 SWEP.Category = "DeathmatchPlus"
 
@@ -34,10 +32,10 @@ SWEP.AdminSpawnable = true
 SWEP.ViewModel = "models/weapons/v_IRifle.mdl"
 SWEP.WorldModel = "models/weapons/w_IRifle.mdl"
 
-SWEP.Primary.ClipSize = 35
-SWEP.Primary.DefaultClip = 35
+SWEP.Primary.ClipSize = 8
+SWEP.Primary.DefaultClip = 8
 
-SWEP.Primary.Automatic = true
+SWEP.Primary.Automatic = false
 
 SWEP.Primary.Ammo = "Buckshot"
 
