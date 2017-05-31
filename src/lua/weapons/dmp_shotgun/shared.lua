@@ -80,23 +80,23 @@ function SWEP:SecondaryAttack()
 end
 
 function SWEP:DrawHUD()
-	local x, y
+	--local x, y
 
-	x, y = ScrW() / 2.0, ScrH() / 2.0
+	--x, y = ScrW() / 2.0, ScrH() / 2.0
 	
-	local scale = 10 * self.Primary.Cone
+	--local scale = 10 * self.Primary.Cone
 	
-	local LastShootTime = self.Weapon:GetNetworkedFloat( "LastShootTime", 0 )
-	scale = scale * (2 - math.Clamp( (CurTime() - LastShootTime) * 5, 0.0, 1.0 ))
+	--local LastShootTime = self.Weapon:GetNetworkedFloat( "LastShootTime", 0 )
+	--scale = scale * (2 - math.Clamp( (CurTime() - LastShootTime) * 5, 0.0, 1.0 ))
 	
-	surface.SetDrawColor( 0, 255, 0, 255 )
+	--surface.SetDrawColor( 0, 255, 0, 255 )
 	
-	local gap = 0.9 * scale
-	local length = gap + 0.4 * scale
-	surface.DrawLine( x - length, y, x - gap, y )
-	surface.DrawLine( x + length, y, x + gap, y )
-	surface.DrawLine( x, y - length, x, y - gap )
-	surface.DrawLine( x, y + length, x, y + gap )
+	--local gap = 0.9 * scale
+	--local length = gap + 0.4 * scale
+	--surface.DrawLine( x - length, y, x - gap, y )
+	--surface.DrawLine( x + length, y, x + gap, y )
+	--surface.DrawLine( x, y - length, x, y - gap )
+	--surface.DrawLine( x, y + length, x, y + gap )
 
 end
 
