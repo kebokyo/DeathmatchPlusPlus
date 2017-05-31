@@ -18,21 +18,19 @@
 
 
   -- Randomness
-	local r1 = math.random(1,20)
-	local r2 = math.random(1,6)
-	local r3 = math.random(1,5)
-
-	-- TESTING ONLY! REMOVE BEFORE MERGE!
-	r1 = 1
-	-- TESTING ONLY! REMOVE BEFORE MERGE!
+	ply:Give( "dmp_shotgun" )
+	--local r1 = math.random(1,20)
+	--local r2 = math.random(1,6)
+	--local r3 = math.random(1,5)
 		
 	
 	-- I'm sorry for using 3rd party propriatary weapon addon. I'm working on custom weapons, but they're not ready.
 	-- It's going to feel more like Quake once they're in.
 	-- Determine Primary
-	if r1 == 1 then
+	if customWeapons:GetInt() == 1 then
 		-- Testing the custom weapons.
-		ply:Give( "dmp_ar" )
+		ply:Give( "dmp_shotgun" )
+		ply:GiveAmmo( 90, "Buckshot", true )
 
 	elseif r1 == 2 then
 

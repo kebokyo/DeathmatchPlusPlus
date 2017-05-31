@@ -55,8 +55,8 @@ function GM:PlayerSpawn( ply )
 
 
 	--Weapons
-	include( "weaponpick.lua" )
 
+	ply:Give( "dmp_shotgun" )
 	--Do some stupid setup things here.
 	ply:SetupHands()
 	local ammo = GetConVar( "dmp_ammo" )
@@ -69,6 +69,8 @@ function GM:PlayerSpawn( ply )
 	--ply:Give( "fas2_ifak" )
 	--This is temporary, no forgitty!!!!
 
+	include( "weaponpick.lua" )
+	
 	--Give the player all the ammo.
 	ply:GiveAmmo( ammoAmmount, "9x18MM", true )
 	ply:GiveAmmo( ammoAmmount, "9x19MM", true )
@@ -96,6 +98,7 @@ function GM:PlayerSpawn( ply )
 
 	--hpMulti is a health multiplier.
 	local hpMulti = GetConVar( "dmp_healthmultiplier" )
+	
 	--enMulti is an armor multiplier.
 	local enMulti = GetConVar( "dmp_armormultiplier" )
 	--walkSpeed is the walk speed.

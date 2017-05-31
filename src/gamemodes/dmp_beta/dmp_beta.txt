@@ -79,5 +79,14 @@
 			"default"	"600"
 		}
 
+		9
+		{
+			"name"		"dmp_weapons"
+			"text"		"Toggles Custom Weapons"
+			"help"		""
+			"type"		"CheckBox"
+			"default"	"1"
+		}
+
 	}
 }
