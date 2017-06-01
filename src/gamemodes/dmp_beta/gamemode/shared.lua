@@ -16,6 +16,7 @@
 --    along with DeathmatchPlus.  If not, see <http://www.gnu.org/licenses/>.
 
 include( "defaultdm.lua" )
+AddCSLuaFile( "defaultdm.lua" )
 
 GM.Name = "DeathmatchPlus"
 GM.Author = "John Lorentzson, Petter Öhlén"

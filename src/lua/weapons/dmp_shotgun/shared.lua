@@ -2,7 +2,7 @@ if ( CLIENT ) then
 	SWEP.PrintName			= "Shotgun"
 	SWEP.Slot				= 1
 	SWEP.SlotPos			= 1
-	SWEP.ViewModelFlip				= true -- Flip the model? Usally used for CS:S models
+	SWEP.ViewModelFlip		= true
 	SWEP.ViewModelFOV		= 63
 end
 

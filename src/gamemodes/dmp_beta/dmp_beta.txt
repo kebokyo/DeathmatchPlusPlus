@@ -1,7 +1,7 @@
 "deathmatchplus"
 {
 	"base"		"base"
-	"title"		"Deathmatch Plus Beta v1.1.5"
+	"title"		"Deathmatch Plus Beta v1.5"
 	"menusystem"	"1"
 
 	"settings"
@@ -61,29 +61,13 @@
 			"default"	"50"
 		}
 
+
+
 		7
 		{
-			"name"		"dmp_walkspeed"
-			"text"		"Speed of walking !!!NOT WORKING!!!"
-			"help"		"Changes walk speed."
-			"type"		"Numeric"
-			"default"	"325"
-		}
-
-		8
-		{
-			"name"		"dmp_runspeed"
-			"text"		"Speed of running !!!NOT WORKING!!!"
-			"help"		"Changes run speed."
-			"type"		"Numeric"
-			"default"	"600"
-		}
-
-		9
-		{
 			"name"		"dmp_weapons"
-			"text"		"Toggles Custom Weapons"
-			"help"		""
+			"text"		"Toggle Custom Weapons"
+			"help"		"Toggle Custom Weapons"
 			"type"		"CheckBox"
 			"default"	"1"
 		}
