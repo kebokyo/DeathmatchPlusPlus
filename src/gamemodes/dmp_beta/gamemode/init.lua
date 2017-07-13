@@ -90,7 +90,7 @@ function GM:PlayerSpawn( ply )
 		-- Testing the custom weapons.
 		ply:Give( "dmp_shotgun", false )
 		ply:GiveAmmo( 90, "Buckshot", true )
-	end
+	
 		
 	elseif r1 == 2 then
 
