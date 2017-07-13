@@ -62,8 +62,6 @@ function GM:PlayerSpawn( ply )
   
   
 	--Weapons
-	ply:Give( "weapon_ar2" )
-	ply:Give( "dmp_shotgun" )
 	--Do some stupid setup things here.
 	ply:SetupHands()
 	local ammo = GetConVar( "dmp_ammo" )
@@ -81,7 +79,10 @@ function GM:PlayerSpawn( ply )
 	--local r1 = math.random(1,20)
 	--local r2 = math.random(1,6)
 	--local r3 = math.random(1,5)
-		
+
+	ply:Give( "weapon_ar2" )
+	ply:Give( "dmp_shotgun" )
+	
 	
 	-- I'm sorry for using 3rd party propriatary weapon addon. I'm working on custom weapons, but they're not ready.
 	-- It's going to feel more like Quake once they're in.
