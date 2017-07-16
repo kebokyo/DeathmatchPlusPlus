@@ -16,8 +16,8 @@
 --    along with DeathmatchPlus.  If not, see <http://www.gnu.org/licenses/>.
 
 AddCSLuaFile( "shared.lua" )
-include( "shared.lua" )
 AddCSLuaFile( "defaultdm.lua" )
+include( "shared.lua" )
 include( "defaultdm.lua" )
 
 function GM:PlayerSpawn( ply )
