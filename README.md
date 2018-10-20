@@ -1,4 +1,5 @@
 # Kyokyo's Deathmatch++
+***very special thanks to [duuqnd](https://steamcommunity.com/id/duuqnd) for starting this project***
 
 [ORIGINAL DM+ Steam Workshop Link](http://steamcommunity.com/sharedfiles/filedetails/?id=899508479)
 
