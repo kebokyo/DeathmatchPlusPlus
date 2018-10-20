@@ -41,6 +41,8 @@ More officially supported maps. (kyokyo's note: have no idea what this means yet
 
 ~~Custom made weapons for the gamemode.~~ My goal is to basically have this mode as a template for whatever you want to do, so I don't want to make custom weapons. Again though, yell at me enough and I'll throw my hat into the ring. I could try to make some unique weapons. Key word ***try***.
 
+Remove dependency on FA:S. I don't want anyone to have to download more than they nor the host wants to.
+
 Add a customizable shop system like some other deathmatch gamemodes.
 
 Have the ability to set up teams or squads.
