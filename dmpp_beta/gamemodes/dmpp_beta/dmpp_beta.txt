@@ -1,7 +1,7 @@
 "deathmatchplus"
 {
 	"base"		"base"
-	"title"		"Deathmatch Plus Beta v1.1.5"
+	"title"		"DM++ a1.0"
 	"menusystem"	"1"
 
 	"settings"
