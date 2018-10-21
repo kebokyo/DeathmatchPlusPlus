@@ -1,0 +1,83 @@
+"deathmatchplus"
+{
+	"base"		"base"
+	"title"		"Deathmatch Plus Beta v1.1.5"
+	"menusystem"	"1"
+
+	"settings"
+	{
+		1
+		{
+			"name"		"dmp_maxkills"
+			"text"		"Max Kills"
+			"help"		"This is the maximum amount of kills until the map changes."
+			"type"		"Numeric"
+			"default"	"35"
+
+		}
+
+		2
+		{
+			"name"		"dmp_allow_medkits"
+			"text"		"Allows spawning with a medkit"
+			"help"		"This option toggles explosive weapons"
+			"type"		"CheckBox"
+			"default"	"0"
+		}
+
+		3
+		{
+			"name"		"dmp_healthmultiplier"
+			"text"		"Health multiplier"
+			"help"		"This multiplies player health by set amount. (default = 1)"
+			"type"		"Numeric"
+			"default"	"1"
+		}
+
+		4
+		{
+			"name"		"dmp_armormultiplier"
+			"text"		"Armor multiplier"
+			"help"		"This multiplies players armor by set amount. (default = 0)"
+			"type"		"Numeric"
+			"default"	"0"
+		}
+
+		6
+		{
+			"name"		"dmp_meds"
+			"text"		"Amount of medical supplies"
+			"help"		"Changes amount of medical supplies in medkit."
+			"type"		"Numeric"
+			"default"	"5"
+		}
+
+		5
+		{
+			"name"		"dmp_ammo"
+			"text"		"Amount of ammo"
+			"help"		"Changes amount of ammo."
+			"type"		"Numeric"
+			"default"	"50"
+		}
+
+		7
+		{
+			"name"		"dmp_walkspeed"
+			"text"		"Speed of walking !!!NOT WORKING!!!"
+			"help"		"Changes walk speed."
+			"type"		"Numeric"
+			"default"	"325"
+		}
+
+		8
+		{
+			"name"		"dmp_runspeed"
+			"text"		"Speed of running !!!NOT WORKING!!!"
+			"help"		"Changes run speed."
+			"type"		"Numeric"
+			"default"	"600"
+		}
+
+	}
+}
