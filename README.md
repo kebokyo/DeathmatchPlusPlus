@@ -106,3 +106,8 @@ Example 1: `dmp_meds 1` will set the starting amout of medical supplies to 1 (NO
 Example 2: `dmp_meds 10` will set the starting amout of medical supplies to 10 (NOTE: using `dmp_meds 10` will set ALL medical supplies to be 10, aka, 10 bandades, 10 quikclots and 10 hemostats)
 
 NOTE: `dmp_meds` will have NO effect if "dmp_allow_medkits` is set to 0
+
+`dmp_weapons`
+Toggles weapons(Custom/FAS:2) (default=1)
+Example 1: `dmp_weapons 1` will enable custom weapons(experimental)
+Example 2: `dmp_weapons 0` will enable the FAS:2 weapons

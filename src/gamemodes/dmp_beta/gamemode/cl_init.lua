@@ -15,8 +15,10 @@
 --    You should have received a copy of the GNU General Public License
 --    along with DeathmatchPlus.  If not, see <http://www.gnu.org/licenses/>.
 
+AddCSLuaFile( "shared.lua" )
+-- AddCSLuaFile( "defaultdm.lua" )
 include( "shared.lua" )
-include( "defaultdm.lua" )
+-- include( "defaultdm.lua" )
 
 function GM:PlayerSpawn( ply )
 	--player_manager.SetPlayerClass( ply, "player_dm" )

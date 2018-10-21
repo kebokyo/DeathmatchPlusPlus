@@ -15,6 +15,7 @@
 --    You should have received a copy of the GNU General Public License
 --    along with DeathmatchPlus.  If not, see <http://www.gnu.org/licenses/>.
 
+AddCSLuaFile( "defaultdm.lua" )
 include( "defaultdm.lua" )
 
 GM.Name = "DeathmatchPlus"
